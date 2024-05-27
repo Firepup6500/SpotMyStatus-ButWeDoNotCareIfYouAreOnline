@@ -357,6 +357,7 @@ public class SlackClient {
             log.trace("Skipping the polling for {} since user account is disabled", cachedUser.getId());
             return false;
         }
+/*
         if (isInOfflineHours(cachedUser)) {
             log.trace("Skipping the polling for {} outside working hours", cachedUser.getId());
             return false;
@@ -365,6 +366,7 @@ public class SlackClient {
             log.trace("Skipping the polling for {} since user is offline", cachedUser.getId());
             return false;
         }
+*/
         if (statusHasBeenManuallyChanged(cachedUser)) {
             log.trace("Skipping the polling for {} since status has been manually updated", cachedUser.getId());
             return false;
